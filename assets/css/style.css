@@ -1,0 +1,116 @@
+* {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+      --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > img {
+    width: 100%;
+}
+
+body main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 82px;
+    width: 100%;
+}
+
+body main .content {
+    text-align: center;
+    width: auto;
+}
+
+body main .content h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.105em;
+    margin-bottom: 20px;
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+body main .content .nameTime {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 46px;
+}
+
+body main .content .nameTime p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--light-grey);
+    text-align: justify;
+    margin-left: 20%;
+}
+
+body main .content .nameTime h2 {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 108px;
+    color: var(--black);
+}
+
+body main .content h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-color);
+    margin-bottom: 31px;
+}
+
+body main .content button {
+    padding: 10px 32px 16px 32px;
+    background-color: var(--purple);
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body main .content button:hover {
+    filter: brightness(1.1)
+}
+
+body main .img {
+    width: max-content;
+}
+
+body main .img img {
+    width: 100%;
+}
+
+@media (max-width: 1228px) {
+    body main {
+        flex-direction: column;
+    }
+
+    body main .img {
+        width: 60%;
+    }
+}
